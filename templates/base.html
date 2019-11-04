@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html class="js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link rel="preconnect" href="https://assets.ubuntu.com">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="https://assets.ubuntu.com/v1/088fd1bf-favicon.ico">
+    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/e8c07df6-Ubuntu-L_W.woff2"
+      crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/7f100985-Ubuntu-Th_W.woff2"
+      crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/f8097dea-Ubuntu-LI_W.woff2"
+      crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/fff37993-Ubuntu-R_W.woff2"
+      crossorigin>
+
+  </head>
+  
+  <body>
+
+    {% include 'partial/_navigation.html' %}
+
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+
+    {% include 'partial/_footer.html' %}
+
+    <script src="/static/js/build/global-nav/global-nav.js"></script>
+    <script>canonicalGlobalNav.createNav();</script>
+  </body>
+
+</html>
