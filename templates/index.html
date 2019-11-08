@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}Charmed OSM{% endblock %}
-
 {% block content %}
 <section class="p-strip--header is-dark">
   <div class="row u-vertically-center u-equal-height">
@@ -15,7 +13,7 @@
       <p>
         Automate deployment and operations of network functions, and benefit from reduced operational costs, by using an open source implementation of ETSI NFV MANO. To improve the stability of deployments and provide telcos with a production-grade platform, Canonical delivers a pure upstream OSM distribution &mdash; Charmed OSM. As a key contributor to the OSM project, we are excited to help you on your NFV journey.
       </p>
-      <p><a href="https://ubuntu.com/contact-us/form?product=generic-contact-us" class="p-button--positive">Get in touch</a></p>
+      <p><a href="/contact-us" class="p-button--positive">Get in touch</a></p>
       <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started#0" class="p-link--inverted">Get Started with Charmed OSM&nbsp;&rsaquo;</a></p>
     </div>
     <div class="col-4 u-align--center u-hide--small">
@@ -222,41 +220,40 @@
     <div class="col-4 p-divider__block">
       <h3>Need a hand with OSM?</h3>
       <p>Don&rsquo;t wait anymore. Roll-out your NFV platform together with Canonical!</p>
-      <a href="https://ubuntu.com/contact-us/form?product=generic-contact-us" class="p-button--positive">Contact us</a>
+      <a href="/contact-us" class="p-button--positive">Contact us</a>
     </div>
     <div class="col-4 p-divider__block">
-      <h3>Sign up for our monthly cloud newsletter</h3>
-      <form action="https://pages.ubuntu.com/index.php/leadCapture/save" method="post" id="mktoForm_1670" class="marketo-form">
-        <p>Receive regular updates from our IoT newsletter.</p>
-        <ul class="p-list">
-          <li class="mktFormReq mktField p-list__item">
-            <label for="Email" class="mktoLabel contextual-footer__text--label">Your email address:</label>
-            <input required="" id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired">
+      <h3>Sign up for our monthly Cloud newsletter</h3>
+      <form class="mktoForm mktoNoJS" action="https://pages.canonical.com/index.php/leadCapture/save" method="post">
+        <ul class="p-list mktoFormRow u-clearfix">
+          <li class="mktoFormCol p-list__item">
+            <label class="u-off-screen mktoLabel" for="Email">Your email</label>
+            <input type="email" placeholder="Your email" class="mktoField mktoTextField" name="Email" id="Email" required="">
           </li>
           <li class="mktField mktLblRight p-list__item">
             <span class="mktInput mktLblRight">
               <input class="mktFormCheckbox" name="canonicalUpdatesOptIn" id="canonicalUpdatesOptIn" value="yes" type="checkbox">
-              <label class="contextual-footer__text--label" for="canonicalUpdatesOptIn">I agree to receive information about Canonical&rsquo;s products and services.</label>&nbsp;<span class="mktFormMsg"></span>
+              <label class="contextual-footer__text--label" for="canonicalUpdatesOptIn"><small>I agree to receive information about Canonical&rsquo;s products and services.</small></label>&nbsp;<span class="mktFormMsg"></span>
             </span>
           </li>
+          <li class="p-list__item u-no-margin--top">
+            <p><small>In submitting this form, I confirm that I have read and agree to <a href="https://ubuntu.com/legal/data-privacy/newsletter">Canonical&rsquo;s Privacy Notice</a> and <a href="https://ubuntu.com/legal/data-privacy">Privacy Policy</a>.</small></p>
+          </li>
           <li class="p-list__item">
-            <div class="g-recaptcha u-sv3" data-sitekey="6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if" data-widget-id="0"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if&amp;co=aHR0cHM6Ly91YnVudHUuY29tOjQ0Mw..&amp;hl=en&amp;v=66WEle60vY1w2WveBS-1ZMFs&amp;size=normal&amp;cb=jdzafm7rjaxv" width="304" height="78" role="presentation" name="a-3lddzuf5qlh2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-          </li>
-          <li class="p-list__item u-sv3">
-            <small>In submitting this form, I confirm that I have read and agree to <a href="/legal/data-privacy/newsletter">Canonical’s Privacy Notice</a> and <a href="/legal/data-privacy">Privacy Policy</a>.</small>
-          </li>
-          <li class="mktField p-list__item">
-            <button type="submit" class="mktoButton p-button--positive">Submit</button>
-            <input type="hidden" name="formid" class="mktoField" value="1670">
-            <input type="hidden" name="formVid" class="mktoField" value="1670">
-            <input type="hidden" name="munchkinId" class="mktoField " value="066-EOV-335">
-            <input type="hidden" name="lpurl" class="mktoField " value="//pages.ubuntu.com/Opt-In_IoTNewsletters.html?cr={creative}&amp;kw={keyword}">
-            <input type="hidden" name="source" class="mktoField  mktoFormCol" value="ubuntu.com">
-            <input type="hidden" name="IoT_Newsletters__c" class="mktoField  mktoFormCol" value="True">
-            <input type="hidden" name="returnURL" value="https://www.ubuntu.com/internet-of-things/thank-you?product=newsletter">
-            <input type="hidden" name="retURL" value="https://www.ubuntu.com/internet-of-things/thank-you?product=newsletter">
-            <input type="hidden" name="return_url" value="https://www.ubuntu.com/internet-of-things/thank-you?product=newsletter">
+            <span class="u-off-screen"><input type="text" name="_marketo_comments" value=""></span>
+            <span class="mktoButtonWrap"><button type="submit" class="mktoButton p-button--positive" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Contextual footer link', 'eventAction' : 'Cloud newsletter', 'eventLabel' : 'Sign-up for news updates', 'eventValue' : undefined });">Subscribe now</button></span>
             <input type="hidden" name="Consent_to_Processing__c" value="yes">
+            <input value="1959" class="mktoField mktoFieldDescriptor" name="lpId" type="hidden">
+            <input value="30" class="mktoField mktoFieldDescriptor" name="subId" type="hidden">
+            <input type="hidden" name="lpurl" value="https://pages.canonical.com/Insights-Subscription_Insights-Subscription-test.html?cr={creative}&amp;kw={keyword}">
+            <input value="1212" class="mktoField mktoFieldDescriptor" name="formid" type="hidden">
+            <input type="hidden" name="ret" value="https://charmed-osm.com/thank-you">
+            <input value="066-EOV-335" class="mktoField mktoFieldDescriptor" name="munchkinId" type="hidden">
+            <input type="hidden" name="kw" value="">
+            <input type="hidden" name="cr" value="">
+            <input type="hidden" name="searchstr" value="">
+            <input type="hidden" name="_mkt_disp" value="return">
+            <input type="hidden" name="_mkt_trk" value="">
           </li>
         </ul>
       </form>
