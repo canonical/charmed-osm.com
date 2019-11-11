@@ -18,6 +18,32 @@ class TestRoutes(unittest.TestCase):
 
         self.assertEqual(self.client.get("/").status_code, 200)
 
+    def test_contact_us(self):
+        """
+        When given the /contact-us URL,
+        we should return a 200 status code
+        """
+
+        self.assertEqual(self.client.get("/contact-us").status_code, 200)
+
+    def test_contact_us_thank_you(self):
+        """
+        When given the /contact-us/thank-you URL,
+        we should return a 200 status code
+        """
+
+        self.assertEqual(
+            self.client.get("/contact-us/thank-you").status_code, 200
+        )
+
+    def test_thank_you(self):
+        """
+        When given the /thank-you URL,
+        we should return a 200 status code
+        """
+
+        self.assertEqual(self.client.get("/thank-you").status_code, 200)
+
     def test_not_found(self):
         """
         When given a non-existent URL,
