@@ -15,3 +15,18 @@ app = FlaskBase(
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+@app.route("/thank-you")
+def thank_you():
+    return render_template("thank-you.html")
+
+
+@app.route("/contact-us")
+def contact_us():
+    return render_template("/contact-us/index.html")
+
+
+@app.route("/contact-us/thank-you")
+def contact_thanks_you():
+    return render_template("/contact-us/thank-you.html")

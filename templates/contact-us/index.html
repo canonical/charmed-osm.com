@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Canonical about Charmed OSM |{% endblock %}
+{% block meta_description %}Get in touch with Canonical sales and support on the phone or online for all your Charmed-OSM questions.{% endblock %}
+
+{% block content %}
+
+<section class="p-strip">
+  <div class="row">
+    <div class="col-8">
+      <h1>Contact Canonical</h1>
+      <p>A member of our team will be in touch within one working day.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <form action="https://pages.ubuntu.com/index.php/leadCapture/save" method="post" id="mktoForm_3471">
+        <fieldset class="u-no-margin--bottom">
+          <ul class="p-list">
+            <li class="mktFormReq mktField p-list__item">
+              <label for="FirstName" class="mktoLabel">First name:</label>
+              <input required id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="LastName" class="mktoLabel">Last name:</label>
+              <input required id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="Email" class="mktoLabel">Email address:</label>
+              <input required id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="Phone" class="mktoLabel">Phone number:</label>
+              <input required id="Phone" name="Phone" maxlength="255" type="tel" class="mktoField mktoTelField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="Company" class="mktoLabel">Company name:</label>
+              <input required id="Company" name="Company" maxlength="255" type="text" class="mktoField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="Title" class="mktoLabel">Job title:</label>
+              <input required id="Title" name="Title" maxlength="255" type="text" class="mktoField mktoRequired" />
+            </li>
+            <li class="mktFormReq mktField p-list__item">
+              <label for="Comments_from_lead__c" class="mktoLabel">How can we help you with Charmed OSM?</label>
+              <textarea required id="Comments_from_lead__c" name="Comments_from_lead__c" rows="4" class="mktoField mktoRequired" maxlength="2000"></textarea>
+            </li>
+            <li>
+              <input class="mktoField" value="yes" id="canonicalUpdatesOptIn" name="canonicalUpdatesOptIn" type="checkbox" />
+              <label class="mktoLabel mktoHasWidth" for="canonicalUpdatesOptIn">Also notify me of new products and events.</label>
+            </li>
+          </ul>
+          <ul class="p-list">
+            <li class="p-list__item u-sv1">
+              <small>In submitting this form, I confirm that I have read and agree to <a href="/legal/dataacy/contact">Canonical&rsquo;s Privacy Notice</a> and <a href="/legal/dataacy">Privacy Policy</a>.</small>
+            </li>
+            <li class="mktField p-list__item">
+              <button type="submit" class="mktoButton p-button--positive" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Form', 'eventAction' : 'cloud contact-us', 'eventLabel' : '{{product}}', 'eventValue' : undefined });">Submit</button>
+            </li>
+          </ul>
+          <!-- hidden fields -->
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formValidation" value="">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" class="mktoField" value="3471">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formVid" class="mktoField" value="3471">
+          <!-- Needs to be update -->
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpId" class="mktoField" value="2154">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="subId" class="mktoField" value="30">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="munchkinId" class="mktoField" value="066-EOV-335">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpurl" class="mktoField" value="https://pages.ubuntu.com/Cloud-contact-us.html?cr={creative}&amp;kw={keyword}">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="cr" class="mktoField" value="">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="kw" class="mktoField" value="">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="q" class="mktoField" value="">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL" value="https://charmed-osm.com/contact-us/thank-you">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="retURL" value="https://charmed-osm.com/contact-us/thank-you">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="return_url" value="https://charmed-osm.com/contact-us/thank-you">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="Consent_to_Processing__c" value="yes">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="col-4">
+      <div class="p-card">
+        <h2 class="p-card__title">Prefer to call us?</h2>
+        <ul class="p-list--divided">
+          <li class="p-list__item">Americas <a href="tel:+17372040291" class="u-float-right">+1 737 2040291</a></li>
+          <li class="p-list__item">France <a href="tel:+33184889319" class="u-float-right">+33 184889319</a></li>
+          <li class="p-list__item">Germany <a href="tel:+4961512746816" class="u-float-right">+49 615 127 46816</a></li>
+          <li class="p-list__item">Japan <a href="tel:+81362053075" class="u-float-right">+81 3 6205 3075</a></li>
+          <li class="p-list__item">Spain <a href="tel:+34932201131" class="u-float-right">+34 932 201131</a></li>
+          <li class="p-list__item">UK <a href="tel:+442036565291" class="u-float-right">+44 203 656 5291</a></li>
+          <li class="p-list__item">Rest of World <a href="tel:+442036565291" class="u-float-right">+44 203 656 5291</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

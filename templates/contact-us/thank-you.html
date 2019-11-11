@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Thank you |{% endblock %}
+
+{% block content %}
+
+{% with thanks_context="for getting in touch!", thanks_message="A member of our team will be in touch within one working day." %}{% include "partial/_thank-you.html" %}{% endwith %}
+
+{% endblock %}

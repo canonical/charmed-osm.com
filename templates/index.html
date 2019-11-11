@@ -1,56 +1,287 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html class="js" lang="en" dir="ltr">
-  <head>
-    <!-- Add meta charset below -->
-    <meta charset="UTF-8" />
-
-    <!-- Add meta name below -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Add page title below -->
-    <title>Charmed OSM</title>
-    
-    <!-- Add preconnect/dns-prefetch below -->
-    <link rel="preconnect" href="https://assets.ubuntu.com">
-    <!-- <link rel="dns-prefetch" href="http://www.spreadfirefox.com/"> -->
-    
-    <!-- Add inline JS below -->
-    <script>// Inline JS</script>
-    
-    <!-- Add stylesheet below -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/styles.css" />
-    
-    <!-- Add inline CSS below -->
-    <style>/* Inline CSS */</style>
-    
-    <!-- Add preload below -->
-    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/e8c07df6-Ubuntu-L_W.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/7f100985-Ubuntu-Th_W.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/f8097dea-Ubuntu-LI_W.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/fff37993-Ubuntu-R_W.woff2" crossorigin>
-
-    <!-- Add script below -->
-    <!-- <script src=""></script> -->
-
-    <!-- Add prefetch/prerender below -->
-    <!-- <link rel="prefetch" href="/style.css" as="style" />
-    <link rel="prerender" href="https://example.com/about.html" /> -->
-  </head>
-
-  <body>
-    <!-- Add navigation below -->
-
-    <main>
-      <!-- Add main content below -->
-      <div class="p-strip--dark">
-        <div class="u-fixed-width">
-          <h1>Charmed OSM</h1>
-        </div>
+{% block content %}
+<section class="p-strip--header is-dark">
+  <div class="row u-vertically-center u-equal-height">
+    <div class="col-8">
+      <h1>
+        NFV Management and Orchestration (MANO)
+      </h1>
+      <p class="p-heading--four u-sv3">
+        Accelerate your migration to NFV with Open Source MANO (OSM)
+      </p>
+      <p>
+        Automate deployment and operations of network functions, and benefit from reduced operational costs, by using an open source implementation of ETSI NFV MANO. To improve the stability of deployments and provide telcos with a production-grade platform, Canonical delivers a pure upstream OSM distribution &mdash; Charmed OSM. As a key contributor to the OSM project, we are excited to help you on your NFV journey.
+      </p>
+      <p><a href="/contact-us" class="p-button--positive">Get in touch</a></p>
+    </div>
+    <div class="col-4 u-align--center u-hide--small">
+      <img src="https://assets.ubuntu.com/v1/e95779ea-opensource-MANO-white.svg" width="300" height="109"
+        alt="">
+    </div>
+  </div>
+</section>
+<section class="p-strip">
+  <div class="u-fixed-width">
+    <h2>What is OSM?</h2>
+    <p>
+      <a href="https://osm.etsi.org/" class="p-link--external">OSM</a> is an open-source implementation of the <a href="https://www.etsi.org/" class="p-link--external">ETSI</a> NFV MANO (MANagement and Orchestration) stack. It was founded by ETSI and is fully aligned with ETSI NFV Information Models. OSM allows Telecommunications Service Providers (TSPs) to move from traditional, legacy networking services to cloud-native network functions and accelerates their NFV transformation. OSM assists with network functions onboarding and orchestration in physical, virtual, containerised and hybrid environments, as required in modern telco networks.
+    </p>
+      <ul class="p-matrix u-clearfix">
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Cost savings from Day&dash;0 to Day&dash;N</h3>
+            <div class="p-matrix__desc">
+              <p>Providing a simple approach to network functions onboarding and orchestration, OSM helps to reduce both time and resources, and thus, assists with bringing costs down.</p>
+            </div>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Operability first</h3>
+            <div class="p-matrix__desc">
+              <p>Unlike other MANO projects, OSM focuses on operability first, providing value by using publicly available, open&dash;source tools.</p>
+            </div>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Carrier&dash;grade</h3>
+            <div class="p-matrix__desc">
+              <p>With almost 4 years of active development and constantly growing adoption, OSM is mature and meets the requirements of commercial NFV networks.</p>
+            </div>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Industry&dash;supported</h3>
+            <p class="p-matrix__desc">Hosted by ETSI and supported by leading carrier&dash;1 TSPs including Telefonica, BT and Telenor.</p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Diversity of environments</h3>
+            <p class="p-matrix__desc">Designed for physical, virtual, container and hybrid network functions.</p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title">Diversity of workloads</h3>
+            <p class="p-matrix__desc">Designed for both open-source and proprietary&dash;source applications.</p>
+          </div>
+        </li>
+      </ul>
+  </div>
+</section>
+<section class="p-strip--light is-bordered">
+  <div class="row u-sv3">
+    <div class="col-6">
+      <h2>Why Charmed OSM?</h2>
+      <p>
+        Charmed OSM is an OSM distribution, developed and maintained by Canonical, which uses <a href="https://jaas.ai/" class="p-link--external">Juju charms</a> to simplify its deployments and operations. Charmed OSM enables TSPs to easily deploy pure upstream OSM in highly available, production-grade and scalable clusters.
+      </p>
+    </div>
+    <div class="col-6 u-vertically-center u-align--center u-hide--small">
+      <img src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" alt="" width="356" height="48">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <ul class="p-list u-no-margin--bottom">
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Industry&dash;aligned and fully compliant with upstream</h3>
+          <p>Charmed OSM is based on the official container images maintained by the upstream OSM community. Being one of the key contributors to the upstream OSM project, Canonical&rsquo;s Charmed OSM roadmap is fully aligned with the requirements of the community.</p>
+        </li>
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Predictable release cadence and upgrade path</h3>
+          <p>Canonical releases a new version of Charmed OSM within two weeks of each upstream OSM release. And every two years, we issue a Long-Term Support (LTS) release which provides security patches and bug fixes for five years. You can upgrade between consecutive releases, or between consecutive LTS releases.</p>
+        </li>
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Simplified deployments and operations</h3>
+          <p>Using Juju charms for OSM deployments and operations simplifies the overall adoption process and lets you benefit from a model&dash;driven, declarative approach. With Charmed OSM, telcos can spin up their OSM stack quickly and focus on network functions themselves.</p>
+        </li>
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Stable and secure</h3>
+          <p>By running on Ubuntu LTS and going through a rigorous testing process at the development phase, Charmed OSM provides production-grade stability and meets the security requirements of modern telecommunications networks.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <ul class="p-list">
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Highly Available and resilient against failures</h3>
+          <p>Canonical&rsquo;s Charmed OSM distribution can be deployed in a highly available mode which is resilient against failures and allows telcos to meet their availability goal.</p>
+        </li>
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Supported with <a href="https://ubuntu.com/advantage" class="p-link--external">Ubuntu Advantage</a></h3>
+          <p>The Ubuntu Advantage support package provides important security patches, up to 24×7 support and production&dash;grade SLAs.</p>
+        </li>
+        <li class="p-list__item">
+          <h3 class="p-heading--four">Availability of managed services</h3>
+          <p>Operating complex software clusters at a promised level of availability is difficult, even when using Juju charms. We understand that and provide managed services for Charmed OSM in response. Simply transfer the operational risk and let Canonical&rsquo;s experts operate your OSM cluster for you.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="p-strip">
+  <div class="u-fixed-width u-sv3"><h2>Integration</h2></div>
+  <div class="row">
+    <div class="col-6">
+      <h3 class="p-heading--four">Any Kubernetes</h3>
+      <p>
+        Being vendor&dash;neutral, Charmed OSM can run on any Kubernetes platform. Simply spin up your Kubernetes cluster and deploy Charmed OSM on top of it.
+      </p>
+    </div>
+    <div class="col-6 u-hide--small u-align--center u-vertically-center">
+      <img src="https://assets.ubuntu.com/v1/9f8a8273-2018-logo-kubernetes+%282%29.svg" alt="" width="356" height="60">
+    </div>
+  </div>
+  <div class="u-fixed-width">
+    <hr class="p-separator">
+  </div>
+  <div class="row">
+    <div class="col-6 u-hide--small u-align--center u-vertically-center">
+      <img src="https://assets.ubuntu.com/v1/847bb9b3-OSM+logo+cloud.svg " alt="" width="436" height="75">
+    </div>
+    <div class="col-6">
+      <h3 class="p-heading--four">Flexible VIM options</h3>
+      <p>
+        Charmed OSM supports multiple VIMs (Virtual Infrastructure Managers)&colon; OpenStack, VMware vSphere, AWS, Azure, OpenNebula and Eclipse fog05. Other VIMs are constantly being added. 
+      </p>
+    </div>
+  </div>
+  <div class="u-fixed-width">
+    <hr class="p-separator">
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h3 class="p-heading--four">Charmed applications</h3>
+      <p>
+        As a collection of <a href="https://jujucharms.com/" class="p-link--external">Juju charms</a>, Charmed OSM can be easily integrated with other charmed applications. This allows native cooperation between Charmed OSM and other applications and results in time savings, and thus, reduces the operational costs as well.
+      </p>
+    </div>
+    <div class="col-6 u-hide--small u-align--center u-vertically-center">
+      <img src="https://assets.ubuntu.com/v1/7e21b535-logo-juju.svg" alt="" width="170" height="70">
+    </div>
+  </div>
+</section>
+<section class="p-strip--light">
+  <div class="u-fixed-width">
+    <h2>Charmed OSM in action</h2>
+  </div>
+  <div class="row">
+    <div class="col-6 u-equal-height">
+      <div class="p-card">
+        <h3 class="p-card__title">Development stack</h3>
+        <hr />
+        <p>The development stack for Charmed OSM is a toolset that allows you to experiment with OSM directly on your workstation. It consists of:</p>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked"><a href="https://microk8s.io/" class="p-link--external">MicroK8s</a> &ndash; a small Kubernetes on your workstation that will host the Charmed OSM installation.</li>
+          <li class="p-list__item is-ticked"><a href="https://microstack.run/" class="p-link--external">MicroStack</a> &ndash; a small OpenStack on your workstation to use as a VIM for Charmed OSM.</li>
+          <li class="p-list__item is-ticked"><a href="https://jaas.ai/osm/bundle" class="p-link--external">Charmed OSM core bundle</a> &ndash; a minimal OSM installation.</li>
+        </ul>
+        <p>For more information about the development stack watch the video: <a href="https://www.youtube.com/watch?v=xxt0zmE1thQ&t=1s" class="p-link--external">Just one machine to get started with OSM</a></p>
       </div>
-    </main>
-
-    <!-- Add footer below -->
-
-  </body>
-</html>
+    </div>
+    <div class="col-6 u-equal-height">
+      <div class="p-card">
+        <h3 class="p-card__title">Production stack</h3>
+        <hr />
+        <p>For production environments, where stability, availability and scalability are the key drivers, Canonical provides a production&dash;grade stack consisting of:</p>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked"><a href="https://maas.io/" class="p-link--external">MAAS</a> &ndash; for bare-metal provisioning.</li>
+          <li class="p-list__item is-ticked"><a href="https://jaas.ai/kubernetes" class="p-link--external">Charmed Kubernetes</a> &ndash;   highly available and scalable Kubernetes cluster for Charmed OSM hosting purposes.</li>
+          <li class="p-list__item is-ticked"><a href="https://jaas.ai/openstack" class="p-link--external">Charmed OpenStack</a> &ndash; a highly available and scalable OpenStack cluster that will be used as the VIM.
+          </li>
+          <li class="p-list__item is-ticked"><a href="https://jaas.ai/osm-ha/bundle" class="p-link--external">Charmed OSM HA bundle</a> &ndash; a highly available and scalable OSM cluster.</li>
+        </ul>
+        <p><a href="https://ubuntu.com/telecommunications" class="p-link--external">Learn more about Canonical’s solutions for telcos</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="p-strip--accent is-shallow">
+  <div class="u-fixed-width">
+    <h2>Interested in trying Charmed OSM?</h2>
+    <p class="p-heading--four">Tell us your NFV story and talk to a Canonical telco expert.</p>
+    <p><a href="/contact-us" class="p-button--positive">Get in touch</a></p>
+    <p><a href="https://tutorials.ubuntu.com" class="p-link--inverted">Try it yourself&nbsp;&rsaquo;</a></p>
+  </div>
+</section>
+<section class="p-strip--light">
+  <div class="u-fixed-width">
+    <h2>Learn more</h2>
+    <p>Canonical is a key contributor to the upstream OSM project, and an owner of the N2VC (Network Service to VNF Communication) component.</p>
+    <ul class="p-list">
+      <li class="p-list__item"><a href="https://www.youtube.com/watch?v=Sv3Z_gbRVgQ" class="p-link--external">Listen to Nathan Rader &ndash; Canonical&rsquo;s NFV Strategy Director &ndash; talking about OSM at the SDN NFV World Congress 2017</a></li>
+      <li class="p-list__item"><a href="https://www.youtube.com/watch?v=xxt0zmE1thQ&t=1s" class="p-link--external">Watch the presentation about Canonical&rsquo;s Development Stack for OSM</a></li>
+    </ul>
+  </div>
+</section>
+<section class="p-strip is-bordered">
+  <div class="row p-divider">
+    <div class="col-4 p-divider__block">
+      <h3>Need a hand with OSM?</h3>
+      <p>Don&rsquo;t wait anymore. Roll-out your NFV platform together with Canonical.</p>
+      <a href="/contact-us" class="p-button--neutral">Contact us</a>
+    </div>
+    <div class="col-4 p-divider__block">
+      <h3>Sign up for our monthly Cloud newsletter</h3>
+      <form class="mktoForm mktoNoJS" action="https://pages.canonical.com/index.php/leadCapture/save" method="post">
+        <ul class="p-list mktoFormRow u-clearfix">
+          <li class="mktoFormCol p-list__item">
+            <label class="u-off-screen mktoLabel" for="Email">Your email</label>
+            <input type="email" placeholder="Your email" class="mktoField mktoTextField" name="Email" id="Email" required="">
+          </li>
+          <li class="mktField mktLblRight p-list__item">
+            <span class="mktInput mktLblRight">
+              <input class="mktFormCheckbox" name="canonicalUpdatesOptIn" id="canonicalUpdatesOptIn" value="yes" type="checkbox">
+              <label class="contextual-footer__text--label" for="canonicalUpdatesOptIn"><small>Also notify me of new products and events.</label>&nbsp;<span class="mktFormMsg"></span></small>
+            </span>
+          </li>
+          <li class="p-list__item u-no-margin--top">
+              <p><small>In submitting this form, I confirm that I have read and agree to <a href="https://ubuntu.com/legal/data-privacy/newsletter">Canonical’s Privacy Notice</a> and <a href="https://ubuntu.com/legal/data-privacy">Privacy Policy</a>.</small></p>
+          </li>
+          <li class="p-list__item">
+            <span class="u-off-screen"><input type="text" name="_marketo_comments" value=""></span>
+            <span class="mktoButtonWrap"><button type="submit" class="mktoButton p-button--neutral" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Contextual footer link', 'eventAction' : 'Cloud newsletter', 'eventLabel' : 'Sign-up for news updates', 'eventValue' : undefined });">Suscribe now</button></span>
+            <input type="hidden" name="Consent_to_Processing__c" value="yes">
+            <input value="1959" class="mktoField mktoFieldDescriptor" name="lpId" type="hidden">
+            <input value="30" class="mktoField mktoFieldDescriptor" name="subId" type="hidden">
+            <input type="hidden" name="lpurl" value="https://pages.canonical.com/Insights-Subscription_Insights-Subscription-test.html?cr={creative}&amp;kw={keyword}">
+            <input value="1212" class="mktoField mktoFieldDescriptor" name="formid" type="hidden">
+            <input type="hidden" name="ret" value="http://charmed-osm.com/thank-you">
+            <input value="066-EOV-335" class="mktoField mktoFieldDescriptor" name="munchkinId" type="hidden">
+            <input type="hidden" name="kw" value="">
+            <input type="hidden" name="cr" value="">
+            <input type="hidden" name="searchstr" value="">
+            <input type="hidden" name="_mkt_disp" value="return">
+            <input type="hidden" name="_mkt_trk" value="">
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="col-4 p-divider__block">
+      <h3>Further reading</h3>
+      <ul class="p-list">
+        <li class="p-list__item">
+          <a class="p-link--external" href="https://ubuntu.com/telecommunications">Ubuntu solutions for telecommunications</a>
+        </li>
+        <li class="p-list__item">
+          <a class="p-link--external" href="https://ubuntu.com/blog/5g-core-implementation-challenges-in-the-field">5G Core implementation: Challenges in the field</a>
+        </li>
+        <li class="p-list__item">
+          <a class="p-link--external" href="https://ubuntu.com/blog/bt-turns-to-canonical-ubuntu-to-enable-next-generation-5g-cloud-core">BT turns to Canonical Ubuntu to enable next generation 5G Cloud Core</a>
+        </li>
+        <li class="p-list__item">
+          <a class="p-link--external" href="https://www.brighttalk.com/webcast/6793/362201/maas-at-the-edge-the-importance-of-bare-metal-provisioning-in-edge-computing">MAAS at the edge &ndash; The importance of bare metal provisioning in edge computing</a>
+        </li>
+        <li class="p-list__item">
+          <a class="p-link--external" href="https://www.brighttalk.com/webcast/6793/362200/using-kubernetes-at-the-edge-architecture-tools-for-edge-clouds-and-devices">Using Kubernetes at the edge - architecture & tools for edge clouds and devices</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
