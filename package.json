@@ -15,8 +15,8 @@
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
   },
   "dependencies": {
-    "@canonical/global-nav": "2.2.1",
-    "autoprefixer": "9.7.1",
+    "@canonical/global-nav": "2.3.0",
+    "autoprefixer": "9.7.3",
     "node-sass": "4.13.0",
     "postcss-cli": "6.1.3",
     "sass-lint": "1.13.1",
