@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@canonical/global-nav@^2.2.1":
+"@canonical/global-nav@2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@canonical/global-nav/-/global-nav-2.2.1.tgz#d7c616e1cb6623dbfab149bd153a93ee18720f95"
   integrity sha512-FskYK8mLj1zM6P5A3J6oh7zGHyN3WQBTEzOHvKxnR/FeuFQ4mLmSZGhTaziDO+FcURkUCMDp7AUjG8BjxTTIlw==
