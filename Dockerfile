@@ -45,7 +45,6 @@ WORKDIR /srv
 # Import code, build assets and mirror list
 ADD . .
 RUN rm -rf package.json yarn.lock
-# COPY --from=build-js /srv/static/js static/js
 COPY --from=build-css /srv/static/css static/css
 
 # Set build id (standardized)
