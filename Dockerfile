@@ -13,7 +13,7 @@ FROM ubuntu:bionic
 
 # Install python and import python dependencies
 ADD . .
-RUN apt-get update && apt-get install --no-install-recommends --yes python3 python3-lib2to3 python3-pkg-resources
+RUN apt update && apt install --no-install-recommends --yes python3 python3-lib2to3 python3-pkg-resources
 COPY --from=python-dependencies /root/.local/lib/python3.6/site-packages /root/.local/lib/python3.6/site-packages
 COPY --from=python-dependencies /root/.local/bin /root/.local/bin
 ENV PATH="/root/.local/bin:${PATH}"
