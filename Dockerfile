@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:experimental
 
+
 # Build stage: Install python dependencies
 # ===
 FROM ubuntu:bionic AS python-dependencies
@@ -7,9 +8,10 @@ RUN apt update && apt install --no-install-recommends --yes python3 python3-pip 
 ADD requirements.txt /tmp/requirements.txt
 RUN --mount=type=cache,target=/root/.cache/pip pip3 install --user --requirement /tmp/requirements.txt
 
+
 # Build stage: Install yarn dependencies
 # ===
-FROM node:10-slim AS yarn-dependencies
+FROM node:12-slim AS yarn-dependencies
 WORKDIR /srv
 ADD package.json .
 RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
