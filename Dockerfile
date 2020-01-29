@@ -46,7 +46,7 @@ WORKDIR /srv
 
 # Import code, build assets and mirror list
 ADD . .
-RUN rm -rf package.json yarn.lock
+RUN rm -rf package.json yarn.lock requirements.txt
 COPY --from=build-css /srv/static/css static/css
 COPY --from=build-js /srv/static/js static/js
 
