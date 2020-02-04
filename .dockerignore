@@ -9,6 +9,10 @@
 cache.sqlite
 README.md
 HACKING.md
+LICENSE
+tests
+Dockerfile
+renovate.json
 
 # The run script isn't needed
 run
@@ -20,4 +24,3 @@ run
 
 # Node is only needed for building, not running
 node_modules
-yarn.lock
