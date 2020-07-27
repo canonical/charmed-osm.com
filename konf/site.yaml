@@ -2,6 +2,10 @@ domain: charmed-osm.com
 
 image: prod-comms.docker-registry.canonical.com/charmed-osm.com
 
+env:
+  - name: SENTRY_DSN
+    value: https://41979fee12c9487786a237cd40d79f69@sentry.is.canonical.com//31
+
 # Overrides for production
 production:
   replicas: 5
