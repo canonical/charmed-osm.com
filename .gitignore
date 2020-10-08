@@ -62,6 +62,7 @@ node_modules/
 bower_components/
 *.log
 
+.dotrun.json
 build/
 dist/
 virtual/

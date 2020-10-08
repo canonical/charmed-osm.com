@@ -31,14 +31,14 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K92JCQ');</script>
+    })(window,document,'script','dataLayer','GTM-KK5HJ2S');</script>
     <!-- End Google Tag Manager -->
 
   </head>
-  
+
   <body>
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92JCQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK5HJ2S" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     {% include 'partial/_navigation.html' %}
 
@@ -48,8 +48,13 @@
 
     {% include 'partial/_footer.html' %}
 
+    <script src="/static/js/build/cookie-policy/cookie-policy.js"></script>
     <script src="/static/js/build/global-nav/global-nav.js"></script>
-    <script>canonicalGlobalNav.createNav({ maxWidth: '72rem' });</script>
-  </body>
+    <script>
+      canonicalGlobalNav.createNav({
+        maxWidth: '72rem',
+      });
+      cpNs.cookiePolicy();
+    </script>  </body>
 
 </html>
