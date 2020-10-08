@@ -35,7 +35,7 @@
     <!-- End Google Tag Manager -->
 
   </head>
-  
+
   <body>
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92JCQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -48,8 +48,13 @@
 
     {% include 'partial/_footer.html' %}
 
+    <script src="/static/js/build/cookie-policy/cookie-policy.js"></script>
     <script src="/static/js/build/global-nav/global-nav.js"></script>
-    <script>canonicalGlobalNav.createNav({ maxWidth: '72rem' });</script>
-  </body>
+    <script>
+      canonicalGlobalNav.createNav({
+        maxWidth: '72rem',
+      });
+      cpNs.cookiePolicy();
+    </script>  </body>
 
 </html>
