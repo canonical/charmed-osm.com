@@ -1,7 +1,7 @@
 <noscript>
   <section class="{% if section_classes %}{{ section_classes }}{% else %}p-strip{% endif %}">
     <div class="row">
-      <h3><a href="/blog{% if tag_name %}/tag/{{ tag_name }}{% endif %}">Read the latest {{ heading_topic }} news on our blog&nbsp;&rsaquo;</a></h3>
+      <h3><a href="https://ubuntu.com/blog{% if tag_name %}/tag/{{ tag_name }}{% endif %}">Read the latest {{ heading_topic }} news on our blog&nbsp;&rsaquo;</a></h3>
     </div>
   </section>
 </noscript>
@@ -10,7 +10,7 @@
   <div class="row">
     <h3>
       Latest {{ heading_topic }} news from
-      <a href="/blog{% if tag_name %}/tag/{{ tag_name }}{% endif %}" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'blog', 'eventAction' : 'clicks blog feed link', 'eventLabel' : 'ubuntu.com{% if tag_name %}/{{ tag_name }}{% else %} homepage{% endif %}', 'eventValue' : undefined });">
+      <a href="https://ubuntu.com/blog{% if tag_name %}/tag/{{ tag_name }}{% endif %}" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'blog', 'eventAction' : 'clicks blog feed link', 'eventLabel' : 'ubuntu.com{% if tag_name %}/{{ tag_name }}{% else %} homepage{% endif %}', 'eventValue' : undefined });">
         our blog&nbsp;&rsaquo;
       </a>
     </h3>
@@ -49,16 +49,13 @@
 
   <script src="{{ versioned_static('js/build/latest-news/latest-news.js') }}"></script>
   <script>
-    canonicalLatestNews.fetchLatestNews(
-    {
+    canonicalLatestNews.fetchLatestNews({
       articlesContainerSelector: "#horizontal-latest-articles",
       articleTemplateSelector: "#horizontal-articles-template",
-      {% if spotlight %}spotlightContainerSelector: "#spotlight",
-      spotlightTemplateSelector: "#spotlight-template",{% endif %}
-      gtmEventLabel: "ubuntu.com{% if tag_name %}/{{ tag_name }}{% else %} homepage{% endif %}",
+      hostname: "ubuntu.com",
+      gtmEventLabel: "charmed-osm homepage",
       {% if tag_name %}tagId: "{{ tag_id }}",{% endif %}
       {% if limit %}limit: "{{ limit }}",{% endif %}
-    }
-    )
+    })
   </script>
 </section>
