@@ -17,7 +17,7 @@
         Automate deployment and operations of network functions, and benefit from reduced operational costs, by using an open source implementation of ETSI NFV MANO. To improve the stability of deployments and provide telcos with a production-grade platform, Canonical delivers a pure upstream OSM distribution &mdash; Charmed OSM. As a key contributor to the Open Source MANO project, we are excited to help you on your NFV journey.
       </p>
       <p><a href="/contact-us" class="p-button--positive">Get in touch</a></p>
-      <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--inverted p-link--external">Tutorial: Get started with Charmed OSM</a></p>
+      <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--inverted p-link--external">Get started with Charmed OSM</a></p>
     </div>
     <div class="col-4 u-align--center u-hide--small">
       <img src="https://assets.ubuntu.com/v1/e95779ea-opensource-MANO-white.svg" width="300" height="109"
@@ -25,121 +25,126 @@
     </div>
   </div>
 </section>
+
+{% with section_classes='p-strip is-deep is-bordered', heading_topic='OSM', tag_name='osm', tag_id='3527', limit='4' %}
+  {% include "shared/_latest_news_strip.html" %}
+{% endwith %}
+
 <section class="p-strip">
-  <div class="u-fixed-width">
+  <div class="row">
     <h2>What is Open Source MANO?</h2>
     <p>
-      <a href="https://osm.etsi.org/" class="p-link--external">OSM</a> is an open-source implementation of the <a href="https://www.etsi.org/" class="p-link--external">ETSI</a> NFV MANO (MANagement and Orchestration) stack. It was founded by ETSI and is fully aligned with ETSI NFV Information Models. Open Source MANO allows Telecommunications Service Providers (TSPs) to move from traditional, legacy networking services to cloud-native network functions and accelerates their NFV transformation. OSM assists with network functions onboarding and orchestration in physical, virtual, containerised and hybrid environments, as required in modern telco networks.
+      <a href="https://osm.etsi.org/" class="p-link--external">OSM</a> is an open-source implementation of the <a href="https://www.etsi.org/" class="p-link--external">ETSI</a> NFV MANO (MANagement and Orchestration) stack. It was founded by ETSI and is fully aligned with ETSI NFV Information Models. Open Source MANO allows Telecommunications Service Providers (TSPs) to move from traditional, legacy networking services to cloud-native network functions and accelerates their NFV transformation.
     </p>
-      <ul class="p-matrix u-clearfix">
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Cost savings from Day&dash;0 to Day&dash;N</h3>
-            <div class="p-matrix__desc">
-              <p>Providing a simple approach to network functions onboarding and orchestration, Open Source MANO helps to reduce both time and resources, and thus, assists with bringing costs down.</p>
-            </div>
+    <h3>An open platform for NFV</h3>
+    <p class="u-sv3">
+      OSM assists with network functions onboarding and orchestration in physical, virtual, containerised and hybrid environments, as required in modern telco networks.
+    </p>
+    <ul class="p-matrix u-clearfix">
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Cost savings from Day&dash;0 to Day&dash;N</h3>
+          <div class="p-matrix__desc">
+            <p>Providing a simple approach to network functions onboarding and orchestration, Open Source MANO helps to reduce both time and resources, and thus, assists with bringing costs down.</p>
           </div>
-        </li>
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Operability first</h3>
-            <div class="p-matrix__desc">
-              <p>Unlike other MANO projects, Open Source MANO focuses on operability first, providing value by using publicly available, open&dash;source tools.</p>
-            </div>
+        </div>
+      </li>
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Operability first</h3>
+          <div class="p-matrix__desc">
+            <p>Unlike other MANO projects, Open Source MANO focuses on operability first, providing value by using publicly available, open&dash;source tools.</p>
           </div>
-        </li>
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Carrier&dash;grade</h3>
-            <div class="p-matrix__desc">
-              <p>With almost 4 years of active development and constantly growing adoption, Open Source MANO is mature and meets the requirements of commercial NFV networks.</p>
-            </div>
+        </div>
+      </li>
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Carrier&dash;grade</h3>
+          <div class="p-matrix__desc">
+            <p>With almost 4 years of active development and constantly growing adoption, Open Source MANO is mature and meets the requirements of commercial NFV networks.</p>
           </div>
-        </li>
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Industry&dash;supported</h3>
-            <p class="p-matrix__desc">Hosted by ETSI and supported by leading carrier&dash;1 TSPs including Telefonica, BT and Telenor.</p>
-          </div>
-        </li>
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Diversity of environments</h3>
-            <p class="p-matrix__desc">Designed for physical, virtual, container and hybrid network functions.</p>
-          </div>
-        </li>
-        <li class="p-matrix__item">
-          <div class="p-matrix__content">
-            <h3 class="p-matrix__title">Diversity of workloads</h3>
-            <p class="p-matrix__desc">Designed for both open-source and proprietary&dash;source applications.</p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Industry&dash;supported</h3>
+          <p class="p-matrix__desc">Hosted by ETSI and supported by leading carrier&dash;1 TSPs including Telefonica, BT and Telenor.</p>
+        </div>
+      </li>
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Diversity of environments</h3>
+          <p class="p-matrix__desc">Designed for physical, virtual, container and hybrid network functions.</p>
+        </div>
+      </li>
+      <li class="p-matrix__item">
+        <div class="p-matrix__content">
+          <h3 class="p-matrix__title">Diversity of workloads</h3>
+          <p class="p-matrix__desc">Designed for both open-source and proprietary&dash;source applications.</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
-<section class="p-strip--light is-bordered">
+
+<section class="p-strip--light">
   <div class="row u-sv3">
-    <div class="col-6">
-      <h2>Why Charmed OSM?</h2>
-      <p>
-        Charmed OSM is an Open Source MANO distribution, developed and maintained by Canonical, which uses <a href="https://jaas.ai/" class="p-link--external">Juju charms</a> to simplify its deployments and operations. Charmed OSM enables TSPs to easily deploy pure upstream Open Source MANO in highly available, production-grade and scalable clusters.
-      </p>
+    <h2>Why Charmed OSM?</h2>
+    <p>Charmed OSM is an Open Source MANO distribution, developed and maintained by Canonical, which uses <a href="https://jaas.ai/" class="p-link--external">Juju charms</a> to simplify its deployments and operations. Charmed OSM enables TSPs to easily deploy pure upstream Open Source MANO in highly available, production-grade and scalable clusters.</p>
+  </div>
+  <div class="row p-divider u-sv3">
+    <div class="col-6 p-divider__block">
+      <h3>Industry&dash;aligned and fully compliant with upstream</h3>
+      <p>Charmed OSM is based on the official container images maintained by the upstream OSM community. Being one of the key contributors to the upstream Open Source MANO project, Canonical&rsquo;s Charmed OSM roadmap is fully aligned with the requirements of the community.</p>
     </div>
-    <div class="col-6 u-vertically-center u-align--center u-hide--small">
-      <img src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" alt="" width="356" height="48">
+    <div class="col-6 p-divider__block">
+      <h3>Simplified deployments and operations</h3>
+      <p>Using Juju charms for Open Source MANO deployments and operations simplifies the overall adoption process and lets you benefit from a model&dash;driven, declarative approach. With Charmed OSM, telcos can spin up their Open Source MANO stack quickly and focus on network functions themselves.</p>
     </div>
   </div>
+
+  <div class="row p-divider u-sv3">
+    <div class="col-6 p-divider__block">
+      <h3>Predictable release cadence and upgrade path</h3>
+      <p>Canonical releases a new version of Charmed OSM within two weeks of each upstream Open Source MANO release. You can upgrade between consecutive releases.</p>
+    </div>
+    <div class="col-6 p-divider__block">
+      <h3>Highly Available and resilient against failures</h3>
+      <p>Canonical&rsquo;s Charmed OSM distribution can be deployed in a highly available mode which is resilient against failures and allows telcos to meet their availability goal.</p>
+    </div>
+  </div>
+
+  <div class="row p-divider">
+    <div class="col-6 p-divider__block">
+      <h3>Supported with <a href="https://ubuntu.com/advantage" class="p-link--external">Ubuntu Advantage</a></h3>
+      <p>The Ubuntu Advantage support package provides important security patches, up to 24×7 support and production&dash;grade SLAs.</p>
+    </div>
+    <div class="col-6 p-divider__block">
+      <h3>Availability of managed services</h3>
+      <p>Operating complex software clusters at a promised level of availability is difficult, even when using Juju charms. We understand that and provide managed services for Charmed OSM in response. Simply transfer the operational risk and let Canonical&rsquo;s experts operate your Open Source MANO cluster for you.</p>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-6">
-      <ul class="p-list u-no-margin--bottom">
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Industry&dash;aligned and fully compliant with upstream</h3>
-          <p>Charmed OSM is based on the official container images maintained by the upstream OSM community. Being one of the key contributors to the upstream Open Source MANO project, Canonical&rsquo;s Charmed OSM roadmap is fully aligned with the requirements of the community.</p>
-        </li>
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Predictable release cadence and upgrade path</h3>
-          <p>Canonical releases a new version of Charmed OSM within two weeks of each upstream Open Source MANO release. You can upgrade between consecutive releases.</p>
-        </li>
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Simplified deployments and operations</h3>
-          <p>Using Juju charms for Open Source MANO deployments and operations simplifies the overall adoption process and lets you benefit from a model&dash;driven, declarative approach. With Charmed OSM, telcos can spin up their Open Source MANO stack quickly and focus on network functions themselves.</p>
-        </li>
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Stable and secure</h3>
-          <p>By running on Ubuntu LTS and going through a rigorous testing process at the development phase, Charmed OSM provides production-grade stability and meets the security requirements of modern telecommunications networks.</p>
-        </li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <ul class="p-list">
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Highly Available and resilient against failures</h3>
-          <p>Canonical&rsquo;s Charmed OSM distribution can be deployed in a highly available mode which is resilient against failures and allows telcos to meet their availability goal.</p>
-        </li>
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Supported with <a href="https://ubuntu.com/advantage" class="p-link--external">Ubuntu Advantage</a></h3>
-          <p>The Ubuntu Advantage support package provides important security patches, up to 24×7 support and production&dash;grade SLAs.</p>
-        </li>
-        <li class="p-list__item">
-          <h3 class="p-heading--four">Availability of managed services</h3>
-          <p>Operating complex software clusters at a promised level of availability is difficult, even when using Juju charms. We understand that and provide managed services for Charmed OSM in response. Simply transfer the operational risk and let Canonical&rsquo;s experts operate your Open Source MANO cluster for you.</p>
-        </li>
-      </ul>
+      <h3>Stable and secure</h3>
+      <p>By running on Ubuntu LTS and going through a rigorous testing process at the development phase, Charmed OSM provides production-grade stability and meets the security requirements of modern telecommunications networks.</p>
     </div>
   </div>
 </section>
-<section class="p-strip is-bordered">
+
+<section class="p-strip">
   <div class="u-fixed-width">
     <blockquote class="p-pull-quote">
-      <p class="p-pull-quote__quote">The introduction of Charmed OSM into the market emphasises OSM’s momentum in the telco industry. Charmed OSM, deployed with Juju, fully automates the installation process and drastically simplifies ongoing OSM operations.</p>
+      <p class="p-pull-quote__quote">The introduction of Charmed OSM into the market emphasises OSM&rsquo;s momentum in the telco industry. Charmed OSM, deployed with Juju, fully automates the installation process and drastically simplifies ongoing OSM operations.</p>
       <cite class="p-pull-quote__citation">Ramon Armada, NFV Solution Director at Altran</cite>
     </blockquote>
   </div>
 </section>
+
 <section class="p-strip--light">
-  <div class="u-fixed-width u-sv3"><h2>Platform Integration</h2></div>
-  <div class="u-fixed-width">
-    <hr style="margin: 2rem 0;">
+  <div class="row u-sv3">
+    <h2>Platform Integration</h2>
   </div>
   <div class="row">
     <div class="col-6">
@@ -153,21 +158,21 @@
     </div>
   </div>
   <div class="u-fixed-width">
-    <hr style="margin: 2rem 0;">
+    <hr class="p-separator"/>
   </div>
   <div class="row">
-    <div class="col-6 u-hide--small u-align--center u-vertically-center">
-      <img src="https://assets.ubuntu.com/v1/847bb9b3-OSM+logo+cloud.svg " alt="" width="436" height="75">
-    </div>
     <div class="col-6">
       <h3 class="p-heading--four">Flexible VIM options</h3>
       <p>
-        Charmed OSM supports multiple VIMs (Virtual Infrastructure Managers)&colon; OpenStack, VMware vSphere, AWS, Azure, OpenNebula and Eclipse fog05. Other VIMs are constantly being added.
+        Charmed OSM supports multiple VIMs (Virtual Infrastructure Managers): OpenStack, VMware vSphere, AWS, Azure, OpenNebula and Eclipse fog05. Other VIMs are constantly being added.
       </p>
+    </div>
+    <div class="col-6 u-hide--small u-align--center u-vertically-center">
+      <img src="https://assets.ubuntu.com/v1/847bb9b3-OSM+logo+cloud.svg " alt="" width="436" height="75">
     </div>
   </div>
   <div class="u-fixed-width">
-    <hr style="margin: 2rem 0;">
+    <hr class="p-separator"/>
   </div>
   <div class="row">
     <div class="col-6">
@@ -194,9 +199,9 @@
         <ul class="p-list">
           <li class="p-list__item is-ticked"><a href="https://microk8s.io/" class="p-link--external">MicroK8s</a> &ndash; a small Kubernetes on your workstation that will host the Charmed OSM installation.</li>
           <li class="p-list__item is-ticked"><a href="https://microstack.run/" class="p-link--external">MicroStack</a> &ndash; a small OpenStack on your workstation to use as a VIM for Charmed OSM.</li>
-          <li class="p-list__item is-ticked"><a href="https://jaas.ai/osm/bundle" class="p-link--external">Charmed OSM core bundle</a> &ndash; a minimal Open Source MANO installation.</li>
+          <li class="p-list__item is-ticked"><a href="https://jaas.ai/osm/bundle/21" class="p-link--external">Charmed OSM core bundle</a> &ndash; a minimal Open Source MANO installation.</li>
         </ul>
-        <p>For more information about the development stack watch the video: <a href="https://www.youtube.com/watch?v=xxt0zmE1thQ" class="p-link--external">Just one machine to get started with OSM</a> or read the tutorial: <a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--external"> Getting started with Charmed OSM</a>.</p>
+        <p>For more information about the development stack watch the video: <a href="https://www.youtube.com/watch?v=xxt0zmE1thQ" class="p-link--external">Just one machine to get started with OSM</a> or read the tutorial: <a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started#0" class="p-link--external"> Getting started with Charmed OSM</a>.</p>
       </div>
     </div>
     <div class="col-6 u-equal-height">
@@ -221,13 +226,13 @@
     <h2>Interested in trying Charmed OSM?</h2>
     <p class="p-heading--four">Tell us your NFV story and talk to a Canonical telco expert.</p>
     <p><a href="/contact-us" class="p-button--positive">Get in touch</a></p>
-    <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--inverted p-link--external">Tutorial: Try it yourself&nbsp;&rsaquo;</a></p>
+    <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--inverted p-link--external">Try it yourself</a></p>
   </div>
 </section>
 <section class="p-strip--light">
   <div class="u-fixed-width">
     <h2>Learn more</h2>
-    <p>Canonical is a key contributor to the upstream Open Source MANO project, and an owner of the N2VC (Network Service to VNF Communication) component.</p>
+    <p>Canonical is a key contributor to the upstream Open Source MANO project, and an <a href="https://osm.etsi.org/wiki/index.php/Main_Page" class="p-link--external">owner</a> of the main OSM components: N2VC (Network Service to VNF Communication), RO (Resource Orchestrator) and DevOps. </p>
     <ul>
       <li class="p-list__item"><a href="https://www.brighttalk.com/webcast/6793/379298" class="p-link--external">Watch the webinar &ndash; How using Charmed OSM helps telcos to accelerate their NFV transformation</a></li>
       <li class="p-list__item"><a href="https://www.youtube.com/watch?v=Sv3Z_gbRVgQ" class="p-link--external">Listen to Nathan Rader &ndash; Canonical&rsquo;s NFV Strategy Director &ndash; talking about OSM at the SDN NFV World Congress 2017</a></li>
