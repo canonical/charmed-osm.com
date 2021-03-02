@@ -17,6 +17,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/osm-hackfests")
+def hackfests():
+    return render_template("osm-hackfests.html")
+
+
 @app.route("/thank-you")
 def thank_you():
     return render_template("thank-you.html")
