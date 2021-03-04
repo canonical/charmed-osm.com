@@ -33,10 +33,6 @@
   </div>
 </section>
 
-{% with section_classes='p-strip is-deep is-bordered', heading_topic='OSM', tag_name='osm', tag_id='3527', limit='4' %}
-  {% include "shared/_latest_news_strip.html" %}
-{% endwith %}
-
 <section class="p-strip">
   <div class="row">
     <h2>What is Open Source MANO?</h2>
@@ -236,6 +232,7 @@
     <p><a href="https://tutorials.ubuntu.com/tutorial/charmed-osm-get-started" class="p-link--inverted p-link--external">Try it yourself</a></p>
   </div>
 </section>
+
 <section class="p-strip--light">
   <div class="u-fixed-width">
     <h2>Learn more</h2>
@@ -247,6 +244,11 @@
     </ul>
   </div>
 </section>
+
+{% with section_classes='p-strip is-deep is-bordered', heading_topic='OSM', tag_name='osm', tag_id='3527', limit='4' %}
+  {% include "shared/_latest_news_strip.html" %}
+{% endwith %}
+
 <section class="p-strip is-bordered">
   <div class="row p-divider">
     <div class="col-4 p-divider__block">
