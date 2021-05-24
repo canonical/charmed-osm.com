@@ -38,7 +38,7 @@
 
   <body>
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK5HJ2S" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK5HJ2S" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
     </noscript>
     {% include 'partial/_navigation.html' %}
 
@@ -55,6 +55,9 @@
         maxWidth: '72rem',
       });
       cpNs.cookiePolicy();
-    </script>  </body>
+    </script>
+    <script src="{{ versioned_static('js/dynamic-contact-form.js') }}"></script>
+
+  </body>
 
 </html>
