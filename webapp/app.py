@@ -35,3 +35,8 @@ def contact_us():
 @app.route("/contact-us/thank-you")
 def contact_thanks_you():
     return render_template("/contact-us/thank-you.html")
+
+
+@app.route("/contact-us/contact-modal")
+def contact_modal():
+    return render_template("/contact-us/contact-modal.html")

@@ -90,7 +90,6 @@
     function initialiseForm() {
       var contactIndex = 1;
       var contactModal = document.getElementById("contact-modal");
-      console.log(contactModal);
       var closeModal = document.querySelector(".p-modal__close");
       var closeModalButton = document.querySelector(".js-close");
       var modalPaginationButtons =
