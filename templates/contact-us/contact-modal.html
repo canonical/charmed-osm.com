@@ -1,0 +1,194 @@
+<div class="p-modal" id="contact-modal">
+  <div class="p-modal__dialog" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <header class="p-modal__header" style="border-bottom: 0; display: block;">
+      <button class="p-modal__close" aria-label="Close active modal" style="margin-left: -1rem;">Close</button>
+      <h2 class="p-modal__title u-sv1" id="modal-title">Orchestrate your network functions</h2>
+    </header>
+    <div class="js-pagination js-pagination--1">
+      <div class="js-formfield">
+        <h3 class="p-heading--five">What are the infrastructure preferences for your network function?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4">
+            <input type="checkbox" id="infrastructure-preferences-your-network-function-kubernetes-cluster">
+            <label for="infrastructure-preferences-your-network-function-kubernetes-cluster">Kubernetes cluster</label>
+            <input type="checkbox" id="infrastructure-preferences-your-network-function-bare-metal">
+            <label for="infrastructure-preferences-your-network-function-bare-metal">Bare metal</label>
+            <input type="checkbox" id="infrastructure-preferences-your-network-function-public-cloud">
+            <label for="infrastructure-preferences-your-network-function-public-cloud">Public cloud</label>
+          </div>
+          <div class="col-4">
+            <input type="checkbox" id="infrastructure-preferences-your-network-function-openstack">
+            <label for="infrastructure-preferences-your-network-function-openstack">OpenStack</label>
+            <input type="checkbox" id="infrastructure-preferences-your-network-function-vmware">
+            <label for="infrastructure-preferences-your-network-function-vmware">VMware</label>
+            <div class="js-other-container">
+              <input type="checkbox" class="js-other-container__checkbox" id="infrastructure-preferences-your-network-function-other">
+              <label for="infrastructure-preferences-your-network-function-other">Other</label>
+              <input type="text" id="infrastructure-preferences-your-network-function-other-specified" class="js-other-container__input" placeholder="Please specify" style="margin-top: 0.25rem; opacity: 0;" aria-label="What?">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-formfield">
+        <h3 class="p-heading--five">What are the priority use cases?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4">
+            <input type="checkbox" id="priority-use-cases-private-lte-5g-network">
+            <label for="priority-use-cases-private-lte-5g-network">Private LTE/5G network</label>
+            <input type="checkbox" id="priority-use-cases-ims">
+            <label for="priority-use-cases-ims">IMS</label>
+            <input type="checkbox" id="priority-use-cases-packet-core">
+            <label for="priority-use-cases-packet-core">Packet core</label>
+          </div>
+          <div class="col-4">
+            <input type="checkbox" id="priority-use-cases-subscriber-data-management">
+            <label for="priority-use-cases-subscriber-data-management">Subscriber data management</label>
+            <input type="checkbox" id="priority-use-cases-ran-oran">
+            <label for="priority-use-cases-ran-oran">RAN/ORAN</label>
+            <input type="checkbox" id="priority-use-cases-oss-bss">
+            <label for="priority-use-cases-oss-bss">OSS/BSS</label>
+          </div>
+          <div class="col-4">
+            <input type="checkbox" id="priority-use-cases-transport">
+            <label for="priority-use-cases-transport">Transport</label>
+            <input type="checkbox" id="priority-use-cases-general-it">
+            <label for="priority-use-cases-general-it">General IT use case</label>
+            <div class="js-other-container">
+              <input type="checkbox" class="js-other-container__checkbox" id="priority-use-cases-other">
+              <label for="priority-use-cases-other">Other</label>
+              <input type="text" id="priority-use-cases-other-specified" class="js-other-container__input" placeholder="Please specify" style="margin-top: 0.25rem; opacity: 0;" aria-label="What?">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-formfield">
+        <h3 class="p-heading--five">What is the nature of the network function?</h3>
+        <div class="row u-no-padding">
+          <div class="col-7 u-sv3">
+            <input type="checkbox" id="nature-of-network-function-vnf">
+            <label for="nature-of-network-function-vnf">Virtualized network function (VNF)</label>
+            <input type="checkbox" id="nature-of-network-function-cnf-knf">
+            <label for="nature-of-network-function-cnf-knf">Cloud-native or kubernetes network function (CNF/KNF)</label>
+            <input type="checkbox" id="nature-of-network-function-pnf">
+            <label for="nature-of-network-function-pnf">Physical network function (PNF)</label>
+            <input type="checkbox" id="nature-of-network-function-hnf">
+            <label for="nature-of-network-function-hnf">Hybrid network function (HNF)</label>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <a class="p-button--positive pagination__link--next" href="">Next</a>
+      </div>
+    </div>
+
+    <div class="js-pagination js-pagination--2 u-hide">
+      <div class="js-formfield">
+        <h3 class="p-heading--five">Do you want automated deployment of your network functions?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4 u-sv3">
+            <input type="radio" id="automated-deployment-network-function-yes">
+            <label for="automated-deployment-network-function-yes">Yes</label>
+            <input type="radio" id="automated-deployment-network-function-no">
+            <label for="automated-deployment-network-function-no">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="row u-no-padding js-formfield">
+        <h3 class="p-heading--five">Tell us about your network function and team</h3>
+        <textarea id="network-function-and-team" rows="3" aria-label="Tell us about your network function and teams" placeholder="What are the features of your network function? Where do you want to use your network function? How is it beneficial for telcos? Any other information?"></textarea>
+      </div>
+      <div class="js-formfield">
+        <h3 class="p-heading--five">Which orchestration capabilities are important for your network function?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4 u-sv3">
+            <input type="checkbox" id="important-orchestration-capabilities-network-function-day0">
+            <label for="important-orchestration-capabilities-network-function-day0">Day 0</label>
+            <input type="checkbox" id="important-orchestration-capabilities-network-function-day1">
+            <label for="important-orchestration-capabilities-network-function-day1">Day 1</label>
+            <input type="checkbox" id="important-orchestration-capabilities-network-function-day2">
+            <label for="important-orchestration-capabilities-network-function-day2">Day 2</label>
+            <input type="checkbox" id="important-orchestration-capabilities-network-function-all">
+            <label for="important-orchestration-capabilities-network-function-all">All of them</label>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <a class="pagination__link--previous p-button--neutral" href="">Previous</a>
+        <a class="pagination__link--next p-button--positive" href="">Next</a>
+      </div>
+    </div>
+    <div class="js-pagination js-pagination--3 u-hide">
+      <h3 class="p-heading--five">How should we get in touch?</h3>
+      <div class="row u-no-padding">
+        <div class="col-6">
+          <form action="https://pages.ubuntu.com/index.php/leadCapture/save" method="post" id="mktoForm_3592" class="modal-form marketo-form">
+            <ul class="p-list">
+              <li class="mktFormReq mktField p-list__item">
+                <label for="FirstName" class="mktoLabel">First name:</label>
+                <input required="" id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoRequired">
+              </li>
+              <li class="mktFormReq mktField p-list__item">
+                <label for="LastName" class="mktoLabel">Last name:</label>
+                <input required="" id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoRequired">
+              </li>
+              <li class="mktFormReq mktField p-list__item">
+                <label for="Email" class="mktoLabel">Work email:</label>
+                <input required="" id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired">
+              </li>
+              <li class="mktField p-list__item">
+                <input class="mktoField" value="yes" id="canonicalUpdatesOptIn" name="canonicalUpdatesOptIn" type="checkbox">
+                <label class="mktoLabel mktoHasWidth" for="canonicalUpdatesOptIn">I agree to receive information about Canonical's products and services.</label>
+              </li>
+              <li class="p-list__item">In submitting this form, I confirm that I have read and agree to <a href="/legal/data-privacy/contact">Canonical's Privacy Notice</a> and <a href="/legal/data-privacy">Privacy Policy</a>.</li>
+              <li class="p-list__item">
+                <div class="g-recaptcha" data-sitekey="6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if" data-widget-id="2"><div style="height: 78px; width: 304px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if&amp;co=aHR0cHM6Ly91YnVudHUuY29tOjQ0Mw..&amp;hl=en&amp;v=eWmgPeIYKJsH2R2FrgakEIkq&amp;size=normal&amp;cb=tdkgzrsctuey" width="304" height="78" role="presentation" name="a-xihokdvzwgng" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="border: 1px solid rgb(193, 193, 193); display: none; height: 40px; margin: 10px 25px; padding: 0; resize: none; width: 250px;"></textarea></div><iframe style="display: none;"></iframe></div>
+              </li>
+            </ul>
+            <div class="u-hide">
+              <h3>Your comments</h3>
+              <ul class="p-list">
+                <li class="mktFormReq mktField p-list__item">
+                  <label for="Comments_from_lead__c" class="mktoLabel">What would you like to talk to us about?</label>
+                  <textarea id="Comments_from_lead__c" name="Comments_from_lead__c" rows="5" class="mktoField" maxlength="2000"></textarea>
+                </li>
+              </ul>
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formValidation" value="">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" class="mktoField" value="3471">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formVid" class="mktoField" value="3471">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpId" class="mktoField" value="2154">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="subId" class="mktoField" value="30">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="munchkinId" class="mktoField" value="066-EOV-335">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpurl" class="mktoField" value="https://pages.ubuntu.com/Cloud-contact-us.html?cr={creative}&amp;kw={keyword}">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="cr" class="mktoField" value="">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="kw" class="mktoField" value="">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="q" class="mktoField" value="">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL" value="https://charmed-osm.com/contact-us/thank-you">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="retURL" value="https://charmed-osm.com/contact-us/thank-you">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="return_url" value="https://charmed-osm.com/contact-us/thank-you">
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="Consent_to_Processing__c" value="yes">
+            </div>
+            <div class="pagination">
+              <a class="pagination__link--previous p-button--neutral" href="">Previous</a>
+              <button type="submit" class="pagination__link--next p-button--positive mktoButton" aria-label="Submit">Let's discuss</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="js-pagination js-pagination--4 u-hide">
+      <div class="row u-no-padding">
+        <div class="u-equal-height">
+          <div class="col-7">
+            <h3 class="p-heading--two">Thank you for getting in touch about Charmed OSM</h3>
+            <p class="p-heading--four">A member of staff will get back to you within one working day.</p>
+          </div>
+          <div class="col-5 u-vertically-center u-align--center u-hide--small">
+            <img src="https://assets.ubuntu.com/v1/cbae9a60-thank_you_orange_cmyk.svg" alt="smile" width="200" height="200" loading="auto">
+          </div>
+        </div>
+      </div>
+      <a class="js-close p-button--neutral" href="">Close</a>
+    </div>
+  </div>
+</div>
