@@ -1,3 +1,5 @@
+import flask
+
 from canonicalwebteam.flask_base.app import FlaskBase
 from flask import render_template
 
@@ -40,3 +42,12 @@ def contact_thanks_you():
 @app.route("/contact-us/contact-modal")
 def contact_modal():
     return render_template("/contact-us/contact-modal.html")
+
+
+@app.route("/sitemap.xml")
+def sitemap_index():
+    xml_sitemap = flask.render_template("sitemap/sitemap-index.xml")
+    response = flask.make_response(xml_sitemap)
+    response.headers["Content-Type"] = "application/xml"
+
+    return response
