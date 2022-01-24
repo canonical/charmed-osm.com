@@ -21,15 +21,12 @@
 // import site specific patterns and overrides
 .p-navigation__banner {
   background-color: $ubuntu-orange;
+  padding: 0 ($spv--large + $sph--small);
 }
 
 .p-navigation {
   .p-navigation__row {
     padding: 0;
-
-    .p-navigation__banner {
-      padding: 0 $spv--large;
-    }
 
     .p-navigation__logo {
       font-weight: 400;
@@ -43,10 +40,10 @@
       }
     }
 
-    .p-navigation__link a {
+    .p-navigation__link {
       height: 100%;
-      padding-left: $spv--large;
-      padding-right: $spv--large;
+      padding-left: ($spv--large + $sph--small);
+      padding-right: ($spv--large + $sph--small);
     }
   }
 }
