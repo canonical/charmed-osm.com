@@ -13,9 +13,9 @@
       .p-modal__dialog {
         margin-bottom: 0;
 
-        @media (min-width: $breakpoint-medium + 100px) {
-          max-width: $breakpoint-medium;
-          min-width: $breakpoint-medium;
+        @media (min-width: $breakpoint-large + 100px) {
+          max-width: $breakpoint-large;
+          min-width: $breakpoint-large;
         }
       }
     }

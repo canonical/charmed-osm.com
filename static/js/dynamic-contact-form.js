@@ -173,7 +173,7 @@
 
       otherContainers.forEach(function (otherContainer) {
         var checkbox = otherContainer.querySelector(
-          ".js-other-container__checkbox"
+          ".p-checkbox__input"
         );
         var input = otherContainer.querySelector(".js-other-container__input");
         checkbox.addEventListener("change", function (e) {
@@ -239,7 +239,7 @@
         var formFields = contactModal.querySelectorAll(".js-formfield");
         formFields.forEach(function (formField) {
           var comma = "";
-          var fieldTitle = formField.querySelector(".p-heading--five");
+          var fieldTitle = formField.querySelector(".p-heading--5");
           var inputs = formField.querySelectorAll("input, textarea");
           message += fieldTitle.innerText + "\r\n";
 
@@ -261,15 +261,15 @@
                     subSectionText = subSection.innerText + ": ";
                   }
 
-                  var label = formField.querySelector(
-                    "label[for=" + input.id + "]"
+                  var span = formField.querySelector(
+                    "span[id=" + input["aria-labelledby"] + "]"
                   );
-                  if (label) {
-                    label = subSectionText + label.innerText;
+                  if (span) {
+                    span = subSectionText + span.innerText;
                   } else {
-                    label = input.id;
+                    span = input["aria-labelledby"]
                   }
-                  message += comma + label;
+                  message += comma + span;
                   comma = ", ";
                 }
                 break;
