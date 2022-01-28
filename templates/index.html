@@ -271,17 +271,17 @@
     <div class="col-4 p-divider__block">
       <h3>Need a hand with OSM?</h3>
       <p>Don&rsquo;t wait anymore. Roll&dash;out your NFV platform together with Canonical.</p>
-      <a href="/#get-in-touch" class="p-button--neutral js-invoke-modal">Get in touch</a>
+      <a href="/#get-in-touch" class="p-button js-invoke-modal">Get in touch</a>
     </div>
     <div class="col-4 p-divider__block">
       <h3>Sign up for our monthly Cloud newsletter</h3>
-      <form class="mktoForm mktoNoJS" action="https://pages.canonical.com/index.php/leadCapture/save" method="post">
-        <ul class="p-list mktoFormRow u-clearfix">
-          <li class="mktoFormCol p-list__item">
-            <label class="u-off-screen mktoLabel" for="Email">Your email</label>
-            <input type="email" placeholder="Your email" class="mktoField mktoTextField" name="Email" id="Email" required="">
+      <form action="https://ubuntu.com/marketo/submit" method="post">
+        <ul class="p-list u-clearfix">
+          <li class="p-list__item">
+            <label class="u-off-screen" for="email">Your email</label>
+            <input type="email" placeholder="Your email" name="email" id="email" required="">
           </li>
-          <li class="mktField mktLblRight p-list__item">
+          <li class="p-list__item">
             <label class="p-checkbox">
               <input type="checkbox" value="yes" name="canonicalUpdatesOptIn2" aria-labelledby="canonicalUpdatesOptIn2" class="p-checkbox__input">
               <span class="p-checkbox__label" id="canonicalUpdatesOptIn2">Also notify me of new products and events.&nbsp;</span>
@@ -291,20 +291,9 @@
               <p><small>In submitting this form, I confirm that I have read and agree to <a href="https://ubuntu.com/legal/data-privacy/newsletter">Canonical’s Privacy Notice</a> and <a href="https://ubuntu.com/legal/data-privacy">Privacy Policy</a>.</small></p>
           </li>
           <li class="p-list__item">
-            <span class="u-off-screen"><input type="text" name="_marketo_comments" value=""></span>
-            <span class="mktoButtonWrap"><button type="submit" class="mktoButton p-button--neutral" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Contextual footer link', 'eventAction' : 'Cloud newsletter', 'eventLabel' : 'Sign-up for news updates', 'eventValue' : undefined });">Subscribe now</button></span>
+            <span><button type="submit" class="p-button" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Contextual footer link', 'eventAction' : 'Cloud newsletter', 'eventLabel' : 'Sign-up for news updates', 'eventValue' : undefined });">Subscribe now</button></span>
             <input type="hidden" name="Consent_to_Processing__c" value="yes">
-            <input value="1959" class="mktoField mktoFieldDescriptor" name="lpId" type="hidden">
-            <input value="30" class="mktoField mktoFieldDescriptor" name="subId" type="hidden">
-            <input type="hidden" name="lpurl" value="https://pages.canonical.com/Insights-Subscription_Insights-Subscription-test.html?cr={creative}&amp;kw={keyword}">
-            <input value="1212" class="mktoField mktoFieldDescriptor" name="formid" type="hidden">
-            <input type="hidden" name="ret" value="http://charmed-osm.com/thank-you">
-            <input value="066-EOV-335" class="mktoField mktoFieldDescriptor" name="munchkinId" type="hidden">
-            <input type="hidden" name="kw" value="">
-            <input type="hidden" name="cr" value="">
-            <input type="hidden" name="searchstr" value="">
-            <input type="hidden" name="_mkt_disp" value="return">
-            <input type="hidden" name="_mkt_trk" value="">
+            <input value="1212" p-buttonname="formid" type="hidden">
           </li>
         </ul>
       </form>
