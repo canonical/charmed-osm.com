@@ -279,7 +279,7 @@
         <ul class="p-list u-clearfix">
           <li class="p-list__item">
             <label class="u-off-screen" for="email">Your email</label>
-            <input type="email" placeholder="Your email" name="email" id="email" required="">
+            <input type="email" placeholder="Your email" name="email" id="email" required="" pattern="^[^ ]+@[^ ]+\.[a-z]{2,26}$">
           </li>
           <li class="p-list__item">
             <label class="p-checkbox">
@@ -293,7 +293,8 @@
           <li class="p-list__item">
             <span><button type="submit" class="p-button" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Contextual footer link', 'eventAction' : 'Cloud newsletter', 'eventLabel' : 'Sign-up for news updates', 'eventValue' : undefined });">Subscribe now</button></span>
             <input type="hidden" name="Consent_to_Processing__c" value="yes">
-            <input value="1212" p-buttonname="formid" type="hidden">
+            <input value="1212" name="formid" type="hidden">
+            <input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL" value="https://charmed-osm.com/contact-us/thank-you">
           </li>
         </ul>
       </form>
