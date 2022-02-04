@@ -241,13 +241,15 @@
           var comma = "";
           var fieldTitle = formField.querySelector(".p-heading--5");
           var inputs = formField.querySelectorAll("input, textarea");
-          message += fieldTitle.innerText + "\r\n";
+          if (fieldTitle) {
+            message += fieldTitle.innerText + "\r\n";
+          }
 
           inputs.forEach(function (input) {
             switch (input.type) {
               case "radio":
                 if (input.checked) {
-                  message += comma + input.value;
+                    message += comma + input.value + "\r\n\r\n";
                   comma = ", ";
                 }
                 break;
@@ -260,40 +262,33 @@
                   if (subSection) {
                     subSectionText = subSection.innerText + ": ";
                   }
-
+             
                   var span = formField.querySelector(
-                    "span[id=" + input["aria-labelledby"] + "]"
+                    "span[id=" + input.getAttribute("aria-labelledby") + "]"
                   );
                   if (span) {
                     span = subSectionText + span.innerText;
                   } else {
-                    span = input["aria-labelledby"]
+                    span = input.getAttribute("aria-labelledby")
                   }
                   message += comma + span;
                   comma = ", ";
                 }
                 break;
               case "text":
-                if (
-                  !input.classList.contains("mktoField") &&
-                  input.value !== ""
-                ) {
-                  message += comma + input.value;
+                if (input.value !== "") {
+                  message += comma + input.value + "\r\n\r\n";
                   comma = ", ";
                 }
                 break;
               case "textarea":
-                if (
-                  !input.classList.contains("mktoField") &&
-                  input.value !== ""
-                ) {
-                  message += comma + input.value;
+                if (input.value !== "") {
+                  message += comma + input.value + "\r\n\r\n";
                   comma = ", ";
                 }
                 break;
             }
           });
-          message += "\r\n\r\n";
         });
 
         return message;

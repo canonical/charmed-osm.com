@@ -14,36 +14,36 @@
   </div>
   <div class="row">
     <div class="col-8">
-      <form action="https://pages.ubuntu.com/index.php/leadCapture/save" method="post" id="mktoForm_3471">
+      <form action="https://ubuntu.com/marketo/submit" method="post" id="mktoForm_3471">
         <fieldset class="u-no-margin--bottom">
           <ul class="p-list">
-            <li class="mktFormReq mktField p-list__item">
-              <label for="FirstName" class="mktoLabel">First name:</label>
-              <input required id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoRequired" />
+            <li class="p-list__item">
+              <label for="firstName">First name:</label>
+              <input required id="firstName" name="firstName" maxlength="255" type="text" />
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="LastName" class="mktoLabel">Last name:</label>
-              <input required id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoRequired" />
+            <li class="p-list__item">
+              <label for="lastName">Last name:</label>
+              <input required id="lastName" name="lastName" maxlength="255" type="text" />
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="Email" class="mktoLabel">Email address:</label>
-              <input required id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired" />
+            <li class="p-list__item">
+              <label for="email">Email address:</label>
+              <input required id="email" name="email" maxlength="255" type="email" pattern="^[^ ]+@[^ ]+\.[a-z]{2,26}$"/>
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="Phone" class="mktoLabel">Phone number:</label>
-              <input required id="Phone" name="Phone" maxlength="255" type="tel" class="mktoField mktoTelField mktoRequired" />
+            <li class="p-list__item">
+              <label for="phone">Phone number:</label>
+              <input required id="phone" name="phone" maxlength="255" type="tel" />
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="Company" class="mktoLabel">Company name:</label>
-              <input required id="Company" name="Company" maxlength="255" type="text" class="mktoField mktoRequired" />
+            <li class="p-list__item">
+              <label for="company">Company name:</label>
+              <input required id="company" name="company" maxlength="255" type="text" />
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="Title" class="mktoLabel">Job title:</label>
-              <input required id="Title" name="Title" maxlength="255" type="text" class="mktoField mktoRequired" />
+            <li class="p-list__item">
+              <label for="title">Job title:</label>
+              <input required id="title" name="title" maxlength="255" type="text" />
             </li>
-            <li class="mktFormReq mktField p-list__item">
-              <label for="Comments_from_lead__c" class="mktoLabel">How can we help you with Charmed OSM?</label>
-              <textarea required id="Comments_from_lead__c" name="Comments_from_lead__c" rows="4" class="mktoField mktoRequired" maxlength="2000"></textarea>
+            <li class="p-list__item">
+              <label for="Comments_from_lead__c">How can we help you with Charmed OSM?</label>
+              <textarea required id="Comments_from_lead__c" name="Comments_from_lead__c" rows="4" maxlength="2000"></textarea>
             </li>
             <li>
               <label class="p-checkbox">
@@ -56,25 +56,14 @@
             <li class="p-list__item u-sv1">
               <small>In submitting this form, I confirm that I have read and agree to <a href="/legal/dataacy/contact">Canonical&rsquo;s Privacy Notice</a> and <a href="/legal/dataacy">Privacy Policy</a>.</small>
             </li>
-            <li class="mktField p-list__item">
-              <button type="submit" class="mktoButton p-button--positive" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Form', 'eventAction' : 'cloud contact-us', 'eventLabel' : '{{product}}', 'eventValue' : undefined });">Submit</button>
+            <li class="p-list__item">
+              <button type="submit" class="p-button--positive" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Form', 'eventAction' : 'cloud contact-us', 'eventLabel' : '{{product}}', 'eventValue' : undefined });">Submit</button>
             </li>
           </ul>
           <!-- hidden fields -->
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formValidation" value="">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" class="mktoField" value="3471">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formVid" class="mktoField" value="3471">
+          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" value="3471">
           <!-- Needs to be update -->
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpId" class="mktoField" value="2154">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="subId" class="mktoField" value="30">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="munchkinId" class="mktoField" value="066-EOV-335">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="lpurl" class="mktoField" value="https://pages.ubuntu.com/Cloud-contact-us.html?cr={creative}&amp;kw={keyword}">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="cr" class="mktoField" value="">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="kw" class="mktoField" value="">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="q" class="mktoField" value="">
           <input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL" value="https://charmed-osm.com/contact-us/thank-you">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="retURL" value="https://charmed-osm.com/contact-us/thank-you">
-          <input type="hidden" aria-hidden="true" aria-label="hidden field" name="return_url" value="https://charmed-osm.com/contact-us/thank-you">
           <input type="hidden" aria-hidden="true" aria-label="hidden field" name="Consent_to_Processing__c" value="yes">
         </fieldset>
       </form>
