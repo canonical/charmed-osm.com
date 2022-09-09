@@ -10,13 +10,13 @@
     <meta name="copydoc" content="{% block meta_copydoc %}{% endblock %}">
     <meta name="author" content="Canonical Ltd" />
 
-    <title>{% block title %}{% endblock title %}Charmed OSM, NFV management and orchestration platform</title>
+    <title>{% block title %}{% endblock title %}Canonical Charmed OSM, NFV management and orchestration platform</title>
 
     {% block head_extra %}{% endblock %}
 
     <link rel="preconnect" href="https://assets.ubuntu.com">
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/styles.css" />
-    <link rel="shortcut icon" type="image/png" href="https://assets.ubuntu.com/v1/a0adc5f7-favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="https://assets.ubuntu.com/v1/2c6276dc-cof-favicon-32x32.ico">
     <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/e8c07df6-Ubuntu-L_W.woff2"
       crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="https://assets.ubuntu.com/v1/7f100985-Ubuntu-Th_W.woff2"
@@ -51,9 +51,7 @@
     <script src="/static/js/build/cookie-policy/cookie-policy.js"></script>
     <script src="/static/js/build/global-nav/global-nav.js"></script>
     <script>
-      canonicalGlobalNav.createNav({
-        maxWidth: '72rem',
-      });
+      canonicalGlobalNav.createNav();
       cpNs.cookiePolicy();
     </script>
     <script src="{{ versioned_static('js/dynamic-contact-form.js') }}"></script>
