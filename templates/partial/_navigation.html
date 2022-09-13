@@ -1,20 +1,25 @@
-<header id="navigation" class="p-navigation">
+<header id="navigation" class="p-navigation is-dark">
   <div class="p-navigation__row">
     <div class="p-navigation__banner">
-      <div class="p-navigation__logo u-vertically-center">
-        <a class="p-navigation__item" href="/" style="color: white;">
-          Charmed OSM
+      <div class="p-navigation__tagged-logo">
+        <a class="p-navigation__link" href="/" aria-label="Home page">
+          <div class="p-navigation__logo-tag">
+            <img class="p-navigation__logo-icon" src="https://assets.ubuntu.com/v1/82818827-CoF_white.svg" alt="">
+          </div>
+          <span class="p-navigation__logo-title">Canonical Charmed OSM</span>
         </a>
       </div>
       <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
       <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
     </div>
+
     <nav class="p-navigation__nav">
       <ul class="p-navigation__items">
         <li class="p-navigation__item {% if request.path in ['/osm-hackfests'] %}is-selected{% endif %}">
           <a class="p-navigation__link" href="/osm-hackfests">OSM Hackfests</a>
         </li>
       </ul>
+      <ul class="p-navigation__items global-nav"></ul>
     </nav>
   </div>
 </header>

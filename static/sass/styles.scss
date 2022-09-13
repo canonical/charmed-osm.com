@@ -19,36 +19,6 @@
 // import cookie policy
 @import "@canonical/cookie-policy/build/css/cookie-policy";
 
-// import site specific patterns and overrides
-.p-navigation__banner {
-  background-color: $ubuntu-orange;
-  padding: 0 ($spv--large + $sph--small);
-}
-
-.p-navigation {
-  .p-navigation__row {
-    padding: 0;
-
-    .p-navigation__logo {
-      font-weight: 400;
-      margin-right: 0;
-    }
-
-    .p-navigation__toggle {
-      &--open,
-      &--close {
-        font-weight: 400;
-      }
-    }
-
-    .p-navigation__link {
-      height: 100%;
-      padding-left: ($spv--large + $sph--small);
-      padding-right: ($spv--large + $sph--small);
-    }
-  }
-}
-
 .p-separator {
   margin: 4rem 0;
 }
