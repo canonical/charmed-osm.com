@@ -25,14 +25,14 @@
     "autoprefixer": "10.4.13",
     "sass": "1.57.1",
     "postcss": "8.4.21",
-    "postcss-cli": "8.3.1",
+    "postcss-cli": "10.1.0",
     "vanilla-framework": "3.9.0",
     "watch-cli": "0.2.3"
   },
   "devDependencies": {
-    "concurrently": "5.3.0",
-    "stylelint": "13.13.1",
-    "stylelint-config-standard": "20.0.0",
-    "stylelint-order": "4.1.0"
+    "concurrently": "7.6.0",
+    "stylelint": "14.16.1",
+    "stylelint-config-standard": "29.0.0",
+    "stylelint-order": "6.0.1"
   }
 }
