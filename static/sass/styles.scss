@@ -1,19 +1,14 @@
 @charset 'UTF-8';
 
 // import settings
-@import 'settings';
-@import 'pattern_contact-modal';
+@import "settings";
+@import "pattern_contact-modal";
 
 // import custom mixins
-
 @include osm-p-contact-modal;
 
-// import cookie policy
-// @import "cookie-policy/build/css/cookie-policy";
-
 // import vanilla-framework
-@import 'vanilla-framework';
-
+@import "vanilla-framework";
 @include vanilla;
 
 // import cookie policy
@@ -28,7 +23,20 @@
 
   background-blend-mode: multiply, multiply, normal;
   background-color: #111;
-  background-image: linear-gradient(to bottom left, rgba(216, 216, 216, 0.54) 0, rgba(216, 216, 216, 0.54) 49.9%, transparent 50%), linear-gradient(to bottom right, rgba(228, 228, 228, 0.54) 0, rgba(228, 228, 228, 0.54) 49.9%, transparent 50%), linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
+  background-image:
+    linear-gradient(
+      to bottom left,
+      rgb(216 216 216 / 54%) 0,
+      rgb(216 216 216 / 54%) 49.9%,
+      transparent 50%
+    ),
+    linear-gradient(
+      to bottom right,
+      rgb(228 228 228 / 54%) 0,
+      rgb(228 228 228 / 54%) 49.9%,
+      transparent 50%
+    ),
+    linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
   background-position: top right, top left, left top;
   background-repeat: no-repeat;
   background-size: 77% 115%, 71% 104%, 100% 99.8%;
