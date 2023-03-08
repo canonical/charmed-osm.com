@@ -31,7 +31,7 @@ RUN yarn run build-css
 
 # # Build the production image
 # # ===
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 # Install python and import python dependencies
 ADD . .
