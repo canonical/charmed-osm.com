@@ -3,7 +3,7 @@
 
 # Build stage: Install python dependencies
 # ===
-FROM ubuntu:focal AS python-dependencies
+FROM ubuntu:jammy AS python-dependencies
 RUN apt update && apt install --no-install-recommends --yes python3 python3-pip python3-setuptools
 ADD requirements.txt /tmp/requirements.txt
 RUN --mount=type=cache,target=/root/.cache/pip pip3 install --user --requirement /tmp/requirements.txt
@@ -36,7 +36,7 @@ FROM ubuntu:focal
 # Install python and import python dependencies
 ADD . .
 RUN apt update && apt install --no-install-recommends --yes python3 python3-setuptools python3-lib2to3 python3-pkg-resources
-COPY --from=python-dependencies /root/.local/lib/python3.8/site-packages /root/.local/lib/python3.8/site-packages
+COPY --from=python-dependencies /root/.local/lib/python3.10/site-packages /root/.local/lib/python3.10/site-packages
 COPY --from=python-dependencies /root/.local/bin /root/.local/bin
 ENV PATH="/root/.local/bin:${PATH}"
 
