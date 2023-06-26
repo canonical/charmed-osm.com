@@ -1,6 +1,6 @@
 domain: charmed-osm.com
 
-image: prod-comms.docker-registry.canonical.com/charmed-osm.com
+image: prod-comms.ps5.docker-registry.canonical.com/charmed-osm.com
 
 env:
   - name: SENTRY_DSN
