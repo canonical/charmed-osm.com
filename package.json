@@ -19,14 +19,14 @@
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
   },
   "dependencies": {
-    "@canonical/cookie-policy": "3.4.0",
-    "@canonical/global-nav": "3.2.4",
+    "@canonical/cookie-policy": "3.5.0",
+    "@canonical/global-nav": "3.6.1",
     "@canonical/latest-news": "1.4.1",
     "autoprefixer": "10.4.13",
     "sass": "1.57.1",
     "postcss": "8.4.21",
     "postcss-cli": "10.1.0",
-    "vanilla-framework": "3.14.0",
+    "vanilla-framework": "3.15.1",
     "watch-cli": "0.2.3"
   },
   "devDependencies": {
